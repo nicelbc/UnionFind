@@ -29,5 +29,8 @@
     <ClInclude Include="UnionFind3.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="UnionFind4.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
