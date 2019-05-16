@@ -41,11 +41,15 @@ namespace UF4 {
 		int find(int p) {
 
 			assert(p >= 0 && p < count);
-			while (p != parent[p]) {
-				parent[p] = parent[parent[p]];//???? confused
-				p = parent[p];
-			}
-			return p;
+			//while (p != parent[p]) {
+			//	parent[p] = parent[parent[p]];//???? confused
+			//	p = parent[p];
+			//}
+			//return p;
+
+			if (p != parent[p])//di gui  Recuersive 
+				parent[p] = find(parent[p]); 
+				return parent[p];
 		}
 
 		void unionElements(int p, int q) {

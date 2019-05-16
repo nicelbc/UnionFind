@@ -1,4 +1,6 @@
 #pragma once
+#include<cassert>
+using namespace std;
 
 namespace UF1 {
 
@@ -24,7 +26,7 @@ namespace UF1 {
 
 		int find(int p) {
 
-			static_assert(p >= 0 && p < count);
+			assert(p >= 0 && p < count);
 			return id[p];
 		}
 
